@@ -2,7 +2,7 @@
 
 > A beautiful, interactive web guide for onboarding new users to **FWAuto** — the AI-powered firmware development automation tool.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/fwauto-guide)
+VIEW - CLICK HERE: https://fw-auto-guide.vercel.app/
 
 ---
 
@@ -101,15 +101,15 @@ The guide uses a **dark terminal aesthetic** inspired by GitHub's dark theme and
 
 ### Color Palette
 
-| Token | Value | Usage |
-|---|---|---|
-| `--background` | `#0a0e13` | Page background |
-| `--card` | `#0d1117` | Card/panel backgrounds |
-| `--card-border` | `#21262d` | Borders |
-| `--accent` | `#3fb950` | Green accent (primary brand) |
-| `--muted` | `#8b949e` | Secondary text |
-| `terminal-blue` | `#58a6ff` | Flags/options in code |
-| `terminal-yellow` | `#d29922` | Strings in code |
+| Token             | Value     | Usage                        |
+| ----------------- | --------- | ---------------------------- |
+| `--background`    | `#0a0e13` | Page background              |
+| `--card`          | `#0d1117` | Card/panel backgrounds       |
+| `--card-border`   | `#21262d` | Borders                      |
+| `--accent`        | `#3fb950` | Green accent (primary brand) |
+| `--muted`         | `#8b949e` | Secondary text               |
+| `terminal-blue`   | `#58a6ff` | Flags/options in code        |
+| `terminal-yellow` | `#d29922` | Strings in code              |
 
 ### Typography
 
@@ -126,9 +126,9 @@ The guide uses a **dark terminal aesthetic** inspired by GitHub's dark theme and
 ```tsx
 <CodeBlock
   code="fwauto build"
-  title="Terminal"        // Optional window title
-  language="bash"         // Optional language label
-  showPrompt={true}       // Show $ prompt prefix (default: true)
+  title="Terminal" // Optional window title
+  language="bash" // Optional language label
+  showPrompt={true} // Show $ prompt prefix (default: true)
 />
 ```
 
@@ -140,9 +140,9 @@ The guide uses a **dark terminal aesthetic** inspired by GitHub's dark theme and
   title="Install Prerequisites"
   description="Short description..."
   badge="Required"
-  badgeColor="yellow"                          // "green" | "blue" | "yellow" | "purple"
-  isCompleted={completedSteps["step-id"]}
-  onComplete={(completed) => toggleStep("step-id", completed)}
+  badgeColor="yellow" // "green" | "blue" | "yellow" | "purple"
+  isCompleted={completedSteps['step-id']}
+  onComplete={(completed) => toggleStep('step-id', completed)}
 >
   {/* Step content */}
 </StepCard>
