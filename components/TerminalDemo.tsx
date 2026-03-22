@@ -28,7 +28,6 @@ export function TerminalDemo({
   const [isDone, setIsDone] = useState(false);
   const [currentTyping, setCurrentTyping] = useState<string | null>(null);
   const [typedChars, setTypedChars] = useState(0);
-  const bottomRef = useRef<HTMLDivElement>(null);
   const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([]);
 
   const clearAllTimeouts = () => {
@@ -106,9 +105,7 @@ export function TerminalDemo({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [visibleLines, currentTyping]);
+
 
   const getLineColor = (type: TerminalLine["type"]) => {
     switch (type) {
@@ -217,7 +214,6 @@ export function TerminalDemo({
           </div>
         )}
 
-        <div ref={bottomRef} />
       </div>
     </div>
   );
