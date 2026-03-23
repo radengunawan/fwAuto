@@ -54,9 +54,7 @@ export function TerminalTyping({ prompt, onSuccess, hint }: TerminalTypingProps)
     }
   };
 
-  useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
+
 
   return (
     <div className="space-y-3">
